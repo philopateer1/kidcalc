@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" id="h" class="theme-default">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>kidcalc</title>
+        <link rel="stylesheet" href="kidcalc assets\main kidcalc.css" />
+    </head>
+
+    <body>
+        <h1 class="textalign font1"><b>Login</b></h1>
+        <form id="form">
+            <div class="flex">
+                <ul class="font1">
+                    <li>
+                        <label>Username:</label>
+                        <input type="text" id="username" placeholder="(max characters 10)"  value="" maxlength="10" required />
+                    </li>
+                    <br />
+                    <br />
+                    <li>
+                        <label>Your Age:</label>
+                        <input type="number" id="age" placeholder="Enter Your Age" value="" required />
+                    </li>
+                    <br />
+                    <br />
+                    <li>
+                        <label>Select Your Prefered Theme:</label>
+                        <select id="themesChange" style="height: 30px;">
+                            <option value="default">default</option>
+                            <option value="space">space</option>
+                            <option value="dinosaurs">dinosaurs</option>
+                            <option value="heroes">heroes</option>
+                        </select>
+                    </li>
+                    <br />
+                    <br />
+                    <li>
+                        <input type="checkbox" checked />
+                        <label>Remember me</label>
+                    </li>
+                    <br />
+                    <br />
+                    <li><button class="submit" type="submit">Submit</button></li>
+                </ul>
+            </div>
+        </form>
+        <hr />
+        <section>
+            <div class="calc">
+                <input class="input" id="calculator" type="text" value="" readonly />
+                <div class="container flex">
+                    <button class="button" onclick="displayed(0)">0</button>
+                    <button class="button" onclick="displayed(1)">1</button>
+                    <button class="button" onclick="displayed(2)">2</button>
+                    <button class="button" onclick="displayed(3)">3</button>
+                    <button class="button" onclick="displayed(4)">4</button>
+                    <button class="button" onclick="displayed(5)">5</button>
+                    <button class="button" onclick="displayed(6)">6</button>
+                    <button class="button" onclick="displayed(7)">7</button>
+                    <button class="button" onclick="displayed(8)">8</button>
+                    <button class="button" onclick="displayed(9)">9</button>
+                    <button class="button" onclick="displayed('&lt;')">&lt;</button>
+                    <button class="button" onclick="displayed('&gt;')">&gt;</button>
+                    <button class="button" onclick="displayed('+')">+</button>
+                    <button class="button" onclick="displayed('-')">-</button>
+                    <button class="button" onclick="displayed('*')">*</button>
+                    <button class="button" onclick="displayed('/')">/</button>
+                    <button class="button" onclick="displayed('.')">.</button>
+                    <button class="button" onclick="calculate()">=</button>
+                    <button class="button" id="clear">C</button>
+                    <button class="button" id="lastResultRecall" style="font-size: x-large;">Ans</button>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <aside>
+            <div class="flex2">
+                <p class="font1 border"><b>Hello <span id="greeting">(User)</span></b></p>
+                <p class="font1 border"><b>Amount of Questions Calculated:<span id="answers">0</span></b></p>
+            </div>
+            <div class="flex2">
+                <p class="font1 border"><b>The User Is <span id="lifeStage">(life stage)</span></b></p>
+                <p class="font1 border"><b>Last Equation Done <span id="lastEquation">(Equation)</span></b></p>
+            </div>
+        </aside>
+        <script src="kidcalc assets/javaKidCalc.js"></script>
+    </body>
+
+    <footer>
+        <p>Copyright <strong id="year"></strong></p>
+    </footer>
+</html>

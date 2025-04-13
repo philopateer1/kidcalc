@@ -1,0 +1,161 @@
+.theme-dinosaurs{
+    background-image: url(images/dinosaurs/dinosaur1.webp);
+    background-size: cover;
+}
+
+.theme-dinosaurs ul li{
+list-style-type: none;
+}
+
+.theme-dinosaurs .textalign {
+    text-align: center;
+}
+
+.theme-dinosaurs .flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.theme-dinosaurs .border{
+    padding: 5px;
+    border: 5px solid #62b96f;
+}
+.theme-dinosaurs .flex2 {
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.theme-dinosaurs section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-dinosaurs .calc {
+    background-image: url(images/dinosaurs/dinosaur2.jpg);
+    background-size: cover;
+    min-width: 310px;
+    max-width: 400px;
+    height: 600px;
+    border: 5px solid #356739;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.theme-dinosaurs input{
+    background-color: rgb(74, 215, 168);
+    padding: 3%;
+}
+
+.theme-dinosaurs .input {
+    background-color: rgb(78, 190, 149);
+    width: 500px;
+    padding: 40px;
+    font-size: 40px;
+}
+
+.theme-dinosaurs .container {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 8px;
+}
+
+.theme-dinosaurs .button {
+    font-family: monospace;
+    font-size: 30px;
+    background-color: #87dd46;
+    border: 3px solid #276c39;
+    border-radius: 75px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    height: 60px;
+    width: 60px;
+}
+
+.theme-dinosaurs .button:hover {
+    font-family: monospace;
+    font-size: 30px;
+    background-color: #3a8b51;
+    border: 3px solid #31623e;
+    border-radius: 75px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.theme-dinosaurs .button:active {
+    font-family: monospace;
+    font-size: 30px;
+    background-color: #386648;
+    border: 3px solid #1f3621;
+    border-radius: 75px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    height: 60px;
+    width: 60px;
+    cursor: grabbing;
+}
+
+.theme-dinosaurs footer {
+    color: rgb(72, 245, 170);
+    font-size: 40px;
+    font-family: monospace;
+}
+
+.theme-dinosaurs .font1 {
+    color: rgb(77, 183, 204);
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.theme-dinosaurs .submit {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: beige;
+    background-color: rgb(77, 191, 138);
+}
+
+.theme-dinosaurs .submit:hover {
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: beige;
+    background-color: rgb(57, 112, 84);
+}
+
+.theme-dinosaurs .submit:active {
+    cursor: grabbing;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: beige;
+    background-color: rgb(40, 68, 51);
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .theme-dinosaurs .flex2 {
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: monospace;
+    }
+    .theme-dinosaurs .border {
+        padding: 3px;
+        border: 2px solid #62b96f;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .theme-dinosaurs .flex2 {
+        padding: 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: monospace;
+    }
+    .theme-dinosaurs .border {
+        padding: 4px;
+        border: 3px solid #62b96f;
+    }
+}
